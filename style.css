@@ -1,7 +1,7 @@
 body {
-  background-image: url('/docs/assets/background.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp2634864.jpg');
   background-size: cover; /* This will make the image cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-attachment: fixed; /* Fixed background (optional) */
-  /* Other background properties like background-position, background-color, etc. can be added as needed */
+  background-position: center top; /* Position the image in the center horizontally and at the top vertically */
+  background-attachment: fixed; /* Fixed background to prevent scrolling */
+  background-repeat: no-repeat; 
 }
