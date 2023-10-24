@@ -1,7 +1,32 @@
 body {
-  background-image: url('https://wallpapercave.com/wp/wp2634864.jpg');
-  background-size: cover; /* This will make the image cover the entire viewport */
-  background-position: center top; /* Position the image in the center horizontally and at the top vertically */
-  background-attachment: fixed; /* Fixed background to prevent scrolling */
-  background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url('https://wallpapercave.com/wp/wp2634864.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position of the title */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Title text color */
+    font-size: 36px; /* Title font size */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
+    padding: 20px; /* Adjust padding as needed */
 }
