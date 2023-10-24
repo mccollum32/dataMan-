@@ -35,6 +35,13 @@ body {
 .description{
     text-align: left;
     color: black;
-    font-size: 23px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.projects{
+    text-align: left;
+    color: black;
+    font-size: 18px;
     padding: 10px;
 }
