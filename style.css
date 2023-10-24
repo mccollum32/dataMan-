@@ -25,8 +25,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Title text color */
-    font-size: 36px; /* Title font size */
+    color: #FFD700; /* Title text color */
+    font-size: 56px; /* Title font size */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
     padding: 20px; /* Adjust padding as needed */
 }
