@@ -30,3 +30,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
     padding: 20px; /* Adjust padding as needed */
 }
+
+.description{
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+}
