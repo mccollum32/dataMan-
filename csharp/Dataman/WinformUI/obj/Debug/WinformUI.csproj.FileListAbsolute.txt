@@ -1,0 +1,10 @@
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\bin\Debug\WinformUI.exe.config
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\bin\Debug\WinformUI.exe
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\bin\Debug\WinformUI.pdb
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.csproj.AssemblyReference.cache
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.Form1.resources
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.Properties.Resources.resources
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.csproj.GenerateResource.cache
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.csproj.CoreCompileInputs.cache
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.exe
+C:\Users\mccolluj7506\Desktop\datamanPJ\Dataman\WinformUI\obj\Debug\WinformUI.pdb
