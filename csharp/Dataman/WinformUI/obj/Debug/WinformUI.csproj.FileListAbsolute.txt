@@ -18,3 +18,13 @@ C:\Users\mccolluj7506\Desktop\Dataman\WinformUI\obj\Debug\WinformUI.csproj.Gener
 C:\Users\mccolluj7506\Desktop\Dataman\WinformUI\obj\Debug\WinformUI.csproj.CoreCompileInputs.cache
 C:\Users\mccolluj7506\Desktop\Dataman\WinformUI\obj\Debug\WinformUI.exe
 C:\Users\mccolluj7506\Desktop\Dataman\WinformUI\obj\Debug\WinformUI.pdb
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\bin\Debug\WinformUI.exe.config
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\bin\Debug\WinformUI.exe
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\bin\Debug\WinformUI.pdb
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.csproj.AssemblyReference.cache
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.Form1.resources
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.Properties.Resources.resources
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.csproj.GenerateResource.cache
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.csproj.CoreCompileInputs.cache
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.exe
+C:\Users\SP-Coding\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.pdb
