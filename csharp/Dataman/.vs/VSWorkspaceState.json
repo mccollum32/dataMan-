@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WinformUI"
   ],
-  "SelectedNode": "\\Dataman.sln",
+  "SelectedNode": "\\WinformUI\\Form2.cs",
   "PreviewInSolutionExplorer": false
 }
