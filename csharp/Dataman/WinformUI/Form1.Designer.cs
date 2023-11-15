@@ -65,7 +65,7 @@ namespace WinformUI
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -83,32 +83,33 @@ namespace WinformUI
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 32);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(58, 32);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -118,7 +119,7 @@ namespace WinformUI
             // 
             // percentBtn
             // 
-            this.percentBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.percentBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.percentBtn.Location = new System.Drawing.Point(12, 177);
             this.percentBtn.Name = "percentBtn";
             this.percentBtn.Size = new System.Drawing.Size(116, 79);
@@ -128,7 +129,7 @@ namespace WinformUI
             // 
             // clearBtn
             // 
-            this.clearBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearBtn.Location = new System.Drawing.Point(255, 177);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(116, 79);
@@ -139,7 +140,7 @@ namespace WinformUI
             // 
             // backBtn
             // 
-            this.backBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.Location = new System.Drawing.Point(377, 177);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(116, 79);
@@ -149,7 +150,7 @@ namespace WinformUI
             // 
             // threeBtn
             // 
-            this.threeBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.threeBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.threeBtn.Location = new System.Drawing.Point(255, 262);
             this.threeBtn.Name = "threeBtn";
             this.threeBtn.Size = new System.Drawing.Size(116, 79);
@@ -159,7 +160,7 @@ namespace WinformUI
             // 
             // twoBtn
             // 
-            this.twoBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twoBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.twoBtn.Location = new System.Drawing.Point(133, 262);
             this.twoBtn.Name = "twoBtn";
             this.twoBtn.Size = new System.Drawing.Size(116, 79);
@@ -169,7 +170,7 @@ namespace WinformUI
             // 
             // oneBtn
             // 
-            this.oneBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oneBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oneBtn.Location = new System.Drawing.Point(11, 262);
             this.oneBtn.Name = "oneBtn";
             this.oneBtn.Size = new System.Drawing.Size(116, 79);
@@ -179,7 +180,7 @@ namespace WinformUI
             // 
             // nineBtn
             // 
-            this.nineBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nineBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nineBtn.Location = new System.Drawing.Point(255, 432);
             this.nineBtn.Name = "nineBtn";
             this.nineBtn.Size = new System.Drawing.Size(116, 79);
@@ -189,7 +190,7 @@ namespace WinformUI
             // 
             // eightBtn
             // 
-            this.eightBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eightBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eightBtn.Location = new System.Drawing.Point(133, 432);
             this.eightBtn.Name = "eightBtn";
             this.eightBtn.Size = new System.Drawing.Size(116, 79);
@@ -199,7 +200,7 @@ namespace WinformUI
             // 
             // sevenBtn
             // 
-            this.sevenBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sevenBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sevenBtn.Location = new System.Drawing.Point(11, 432);
             this.sevenBtn.Name = "sevenBtn";
             this.sevenBtn.Size = new System.Drawing.Size(116, 79);
@@ -209,7 +210,7 @@ namespace WinformUI
             // 
             // sixBtn
             // 
-            this.sixBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sixBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sixBtn.Location = new System.Drawing.Point(255, 347);
             this.sixBtn.Name = "sixBtn";
             this.sixBtn.Size = new System.Drawing.Size(116, 79);
@@ -219,7 +220,7 @@ namespace WinformUI
             // 
             // fiveBtn
             // 
-            this.fiveBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fiveBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fiveBtn.Location = new System.Drawing.Point(133, 347);
             this.fiveBtn.Name = "fiveBtn";
             this.fiveBtn.Size = new System.Drawing.Size(116, 79);
@@ -229,7 +230,7 @@ namespace WinformUI
             // 
             // fourBtn
             // 
-            this.fourBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourBtn.Location = new System.Drawing.Point(11, 347);
             this.fourBtn.Name = "fourBtn";
             this.fourBtn.Size = new System.Drawing.Size(116, 79);
@@ -239,7 +240,7 @@ namespace WinformUI
             // 
             // multiBtn
             // 
-            this.multiBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiBtn.Location = new System.Drawing.Point(377, 347);
             this.multiBtn.Name = "multiBtn";
             this.multiBtn.Size = new System.Drawing.Size(116, 79);
@@ -249,7 +250,7 @@ namespace WinformUI
             // 
             // plusBtn
             // 
-            this.plusBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plusBtn.Location = new System.Drawing.Point(377, 432);
             this.plusBtn.Name = "plusBtn";
             this.plusBtn.Size = new System.Drawing.Size(116, 79);
@@ -259,7 +260,7 @@ namespace WinformUI
             // 
             // equalBtn
             // 
-            this.equalBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equalBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equalBtn.Location = new System.Drawing.Point(377, 517);
             this.equalBtn.Name = "equalBtn";
             this.equalBtn.Size = new System.Drawing.Size(116, 79);
@@ -269,7 +270,7 @@ namespace WinformUI
             // 
             // divBtn
             // 
-            this.divBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divBtn.Location = new System.Drawing.Point(377, 262);
             this.divBtn.Name = "divBtn";
             this.divBtn.Size = new System.Drawing.Size(116, 79);
@@ -279,7 +280,7 @@ namespace WinformUI
             // 
             // zeroBtn
             // 
-            this.zeroBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zeroBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zeroBtn.Location = new System.Drawing.Point(133, 517);
             this.zeroBtn.Name = "zeroBtn";
             this.zeroBtn.Size = new System.Drawing.Size(116, 79);
@@ -289,7 +290,7 @@ namespace WinformUI
             // 
             // CeBtn
             // 
-            this.CeBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CeBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CeBtn.Location = new System.Drawing.Point(133, 177);
             this.CeBtn.Name = "CeBtn";
             this.CeBtn.Size = new System.Drawing.Size(116, 79);
@@ -299,7 +300,7 @@ namespace WinformUI
             // 
             // plusNegBtn
             // 
-            this.plusNegBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusNegBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plusNegBtn.Location = new System.Drawing.Point(11, 517);
             this.plusNegBtn.Name = "plusNegBtn";
             this.plusNegBtn.Size = new System.Drawing.Size(116, 78);
@@ -309,7 +310,7 @@ namespace WinformUI
             // 
             // periodBtn
             // 
-            this.periodBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.periodBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.periodBtn.Location = new System.Drawing.Point(255, 518);
             this.periodBtn.Name = "periodBtn";
             this.periodBtn.Size = new System.Drawing.Size(115, 78);
@@ -319,7 +320,7 @@ namespace WinformUI
             // 
             // entBtn
             // 
-            this.entBtn.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entBtn.Location = new System.Drawing.Point(12, 602);
             this.entBtn.Name = "entBtn";
             this.entBtn.Size = new System.Drawing.Size(481, 77);
@@ -338,7 +339,7 @@ namespace WinformUI
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("OCR A Extended", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(11, 83);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(482, 88);
@@ -349,7 +350,7 @@ namespace WinformUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1038, 710);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.listBox1);
