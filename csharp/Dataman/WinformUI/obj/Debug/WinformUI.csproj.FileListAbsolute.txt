@@ -39,3 +39,4 @@ C:\Users\mccol\OneDrive\Documents\GitHub\mccollum32.github.io\csharp\Dataman\Win
 C:\Users\mccol\OneDrive\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.exe
 C:\Users\mccol\OneDrive\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.pdb
 C:\Users\mccol\OneDrive\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.Form2.resources
+C:\Users\mccol\OneDrive\Documents\GitHub\mccollum32.github.io\csharp\Dataman\WinformUI\obj\Debug\WinformUI.Form3.resources

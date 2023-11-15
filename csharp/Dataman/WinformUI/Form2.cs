@@ -24,8 +24,8 @@ namespace WinformUI
             if (progressBar1.Value == 100)
             {
                 timer1.Enabled = false;
-                Form1 form1 = new Form1();
-                form1.Show();
+                Form3 form3 = new Form3();
+                form3.Show();
                 this.Hide();
             }
         }

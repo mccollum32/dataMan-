@@ -63,6 +63,16 @@ namespace WinformUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AI_Generated_Image__1_ {
+            get {
+                object obj = ResourceManager.GetObject("AI_Generated_Image (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Monolith_tv_psd_1_ {
             get {
                 object obj = ResourceManager.GetObject("Monolith_tv.psd(1)", resourceCulture);
