@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace WinformUI
 {
     public partial class Form1 : Form
     {
+        //This sets the functionalty for the window to move around when clicked on the window not the menu bar
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int LPAR);
         [DllImportAttribute("user32.dll")]
@@ -22,7 +24,7 @@ namespace WinformUI
         const int WM_NCLBUTTONDOWN = 0xA1;
         const int HT_CAPTION = 0x2;
 
-        //This sets moveablity to the window while the window doesn't have a border to it.
+        //This sets moveablity to the window since the window doesn't have a border to it.
         private void windowMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -43,9 +45,9 @@ namespace WinformUI
             this.Close();
         }
 
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clearBtn_Click(object sender, EventArgs e)
         {
-
+            richTextBox1.Clear();
         }
     }
 }
