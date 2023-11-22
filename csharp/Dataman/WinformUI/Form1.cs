@@ -49,5 +49,32 @@ namespace WinformUI
         {
             richTextBox1.Clear();
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+            try
+            {
+                                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error! Try again");
+            }
+        }
+
+        private void oneBtn_Click(object sender, EventArgs e)
+        {
+            int num1 = 0;
+            num1.ToString(richTextBox1.Text);
+            
+            
+        }
+
+        private void twoBtn_Click(object sender, EventArgs e)
+        {
+            int num2;
+        }
     }
 }
