@@ -66,15 +66,21 @@ namespace WinformUI
 
         private void oneBtn_Click(object sender, EventArgs e)
         {
-            int num1 = 0;
+            int num1;
+            if(num1 == "1"){num1.ToString(richTextBox1.Text);}
+            else{MessageBox.Show("Invalid input try again!")}
+            
             num1.ToString(richTextBox1.Text);
-            
-            
         }
 
         private void twoBtn_Click(object sender, EventArgs e)
         {
             int num2;
+            if(num2 == "2" )
+            {
+            num2.ToString(richTextBox1.Text);
+            }            
+            else{MessageBox.Show("Invalid input try again!");}                        
         }
     }
 }
