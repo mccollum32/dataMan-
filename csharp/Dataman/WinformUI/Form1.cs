@@ -65,22 +65,38 @@ namespace WinformUI
         }
 
         private void oneBtn_Click(object sender, EventArgs e)
-        {
-            int num1;
-            if(num1 == "1"){num1.ToString(richTextBox1.Text);}
-            else{MessageBox.Show("Invalid input try again!")}
-            
-            num1.ToString(richTextBox1.Text);
+        {                       
+            if (richTextBox1.Text == "0" && richTextBox1.Text != null)
+            {
+                richTextBox1.Text = "1";
+            }
+            else
+            {
+                richTextBox1.Text = richTextBox1.Text + "1";
+            }
         }
 
         private void twoBtn_Click(object sender, EventArgs e)
         {
-            int num2;
-            if(num2 == "2" )
+           if (richTextBox1.Text == "0" && richTextBox1.Text != null)
             {
-            num2.ToString(richTextBox1.Text);
-            }            
-            else{MessageBox.Show("Invalid input try again!");}                        
+                richTextBox1.Text = "2";
+            }
+            else
+            {
+                richTextBox1.Text = richTextBox1.Text + "2";
+            }                       
         }
-    }
+
+        private void threeBtn_Click(object sender, EventArgs e)
+        { 
+         if (richTextBox1.Text == "0" && richTextBox1.Text != null)
+            {
+                richTextBox1.Text = "2";
+            }
+            else
+            {
+                richTextBox1.Text = richTextBox1.Text + "2";
+            }                       
+        }        
 }
