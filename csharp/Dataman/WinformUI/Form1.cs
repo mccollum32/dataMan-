@@ -53,15 +53,7 @@ namespace WinformUI
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-            
-            try
-            {
-                                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error! Try again");
-            }
+                   
         }
 
         private void oneBtn_Click(object sender, EventArgs e)
