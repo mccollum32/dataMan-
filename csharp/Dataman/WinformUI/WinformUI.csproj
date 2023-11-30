@@ -104,5 +104,8 @@
   <ItemGroup>
     <None Include="Resources\AI_Generated_Image %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dataman.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

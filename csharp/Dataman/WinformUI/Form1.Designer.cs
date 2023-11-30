@@ -36,7 +36,6 @@ namespace WinformUI
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.percentBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
             this.threeBtn = new System.Windows.Forms.Button();
@@ -53,26 +52,26 @@ namespace WinformUI
             this.equalBtn = new System.Windows.Forms.Button();
             this.divBtn = new System.Windows.Forms.Button();
             this.zeroBtn = new System.Windows.Forms.Button();
-            this.CeBtn = new System.Windows.Forms.Button();
-            this.plusNegBtn = new System.Windows.Forms.Button();
+            this.plusNegBtn2 = new System.Windows.Forms.Button();
             this.periodBtn = new System.Windows.Forms.Button();
             this.entBtn = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.subtracBTN = new System.Windows.Forms.Button();
+            this.plusNegBtn1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.menuStrip1.Font = new System.Drawing.Font("High Tower Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.menuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(692, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(515, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,26 +83,26 @@ namespace WinformUI
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(56, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(82, 28);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(166, 34);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(166, 34);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(166, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -111,276 +110,283 @@ namespace WinformUI
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // percentBtn
-            // 
-            this.percentBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.percentBtn.Location = new System.Drawing.Point(8, 115);
-            this.percentBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.percentBtn.Name = "percentBtn";
-            this.percentBtn.Size = new System.Drawing.Size(77, 51);
-            this.percentBtn.TabIndex = 1;
-            this.percentBtn.Text = "%";
-            this.percentBtn.UseVisualStyleBackColor = true;
-            // 
             // clearBtn
             // 
-            this.clearBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.Location = new System.Drawing.Point(170, 115);
-            this.clearBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clearBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Location = new System.Drawing.Point(13, 148);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(77, 51);
+            this.clearBtn.Size = new System.Drawing.Size(358, 78);
             this.clearBtn.TabIndex = 2;
-            this.clearBtn.Text = "C";
-            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = false;
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // backBtn
             // 
-            this.backBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backBtn.Location = new System.Drawing.Point(251, 115);
-            this.backBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.backBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Location = new System.Drawing.Point(377, 148);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(77, 51);
+            this.backBtn.Size = new System.Drawing.Size(116, 78);
             this.backBtn.TabIndex = 3;
-            this.backBtn.Text = "«";
-            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Text = "CE";
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // threeBtn
             // 
-            this.threeBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.threeBtn.Location = new System.Drawing.Point(170, 170);
-            this.threeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.threeBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.threeBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.threeBtn.Location = new System.Drawing.Point(256, 233);
             this.threeBtn.Name = "threeBtn";
-            this.threeBtn.Size = new System.Drawing.Size(77, 51);
+            this.threeBtn.Size = new System.Drawing.Size(116, 78);
             this.threeBtn.TabIndex = 6;
             this.threeBtn.Text = "3";
-            this.threeBtn.UseVisualStyleBackColor = true;
+            this.threeBtn.UseVisualStyleBackColor = false;
+            this.threeBtn.Click += new System.EventHandler(this.threeBtn_Click_1);
             // 
             // twoBtn
             // 
-            this.twoBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoBtn.Location = new System.Drawing.Point(89, 170);
-            this.twoBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.twoBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.twoBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twoBtn.Location = new System.Drawing.Point(135, 233);
             this.twoBtn.Name = "twoBtn";
-            this.twoBtn.Size = new System.Drawing.Size(77, 51);
+            this.twoBtn.Size = new System.Drawing.Size(116, 78);
             this.twoBtn.TabIndex = 5;
             this.twoBtn.Text = "2";
-            this.twoBtn.UseVisualStyleBackColor = true;
+            this.twoBtn.UseVisualStyleBackColor = false;
             this.twoBtn.Click += new System.EventHandler(this.twoBtn_Click);
             // 
             // oneBtn
             // 
-            this.oneBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oneBtn.Location = new System.Drawing.Point(7, 170);
-            this.oneBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.oneBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.oneBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oneBtn.Location = new System.Drawing.Point(11, 233);
             this.oneBtn.Name = "oneBtn";
-            this.oneBtn.Size = new System.Drawing.Size(77, 51);
+            this.oneBtn.Size = new System.Drawing.Size(116, 78);
             this.oneBtn.TabIndex = 4;
             this.oneBtn.Text = "1";
-            this.oneBtn.UseVisualStyleBackColor = true;
+            this.oneBtn.UseVisualStyleBackColor = false;
             this.oneBtn.Click += new System.EventHandler(this.oneBtn_Click);
             // 
             // nineBtn
             // 
-            this.nineBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nineBtn.Location = new System.Drawing.Point(170, 281);
-            this.nineBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nineBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nineBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nineBtn.Location = new System.Drawing.Point(256, 403);
             this.nineBtn.Name = "nineBtn";
-            this.nineBtn.Size = new System.Drawing.Size(77, 51);
+            this.nineBtn.Size = new System.Drawing.Size(116, 78);
             this.nineBtn.TabIndex = 12;
             this.nineBtn.Text = "9";
-            this.nineBtn.UseVisualStyleBackColor = true;
+            this.nineBtn.UseVisualStyleBackColor = false;
+            this.nineBtn.Click += new System.EventHandler(this.nineBtn_Click);
             // 
             // eightBtn
             // 
-            this.eightBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eightBtn.Location = new System.Drawing.Point(89, 281);
-            this.eightBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eightBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.eightBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eightBtn.Location = new System.Drawing.Point(135, 403);
             this.eightBtn.Name = "eightBtn";
-            this.eightBtn.Size = new System.Drawing.Size(77, 51);
+            this.eightBtn.Size = new System.Drawing.Size(116, 78);
             this.eightBtn.TabIndex = 11;
             this.eightBtn.Text = "8";
-            this.eightBtn.UseVisualStyleBackColor = true;
+            this.eightBtn.UseVisualStyleBackColor = false;
+            this.eightBtn.Click += new System.EventHandler(this.eightBtn_Click);
             // 
             // sevenBtn
             // 
-            this.sevenBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sevenBtn.Location = new System.Drawing.Point(7, 281);
-            this.sevenBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sevenBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sevenBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sevenBtn.Location = new System.Drawing.Point(11, 403);
             this.sevenBtn.Name = "sevenBtn";
-            this.sevenBtn.Size = new System.Drawing.Size(77, 51);
+            this.sevenBtn.Size = new System.Drawing.Size(116, 78);
             this.sevenBtn.TabIndex = 10;
             this.sevenBtn.Text = "7";
-            this.sevenBtn.UseVisualStyleBackColor = true;
+            this.sevenBtn.UseVisualStyleBackColor = false;
+            this.sevenBtn.Click += new System.EventHandler(this.sevenBtn_Click);
             // 
             // sixBtn
             // 
-            this.sixBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sixBtn.Location = new System.Drawing.Point(170, 226);
-            this.sixBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sixBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sixBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sixBtn.Location = new System.Drawing.Point(256, 319);
             this.sixBtn.Name = "sixBtn";
-            this.sixBtn.Size = new System.Drawing.Size(77, 51);
+            this.sixBtn.Size = new System.Drawing.Size(116, 78);
             this.sixBtn.TabIndex = 9;
             this.sixBtn.Text = "6";
-            this.sixBtn.UseVisualStyleBackColor = true;
+            this.sixBtn.UseVisualStyleBackColor = false;
+            this.sixBtn.Click += new System.EventHandler(this.sixBtn_Click);
             // 
             // fiveBtn
             // 
-            this.fiveBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fiveBtn.Location = new System.Drawing.Point(89, 226);
-            this.fiveBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fiveBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fiveBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fiveBtn.Location = new System.Drawing.Point(135, 319);
             this.fiveBtn.Name = "fiveBtn";
-            this.fiveBtn.Size = new System.Drawing.Size(77, 51);
+            this.fiveBtn.Size = new System.Drawing.Size(116, 78);
             this.fiveBtn.TabIndex = 8;
             this.fiveBtn.Text = "5";
-            this.fiveBtn.UseVisualStyleBackColor = true;
+            this.fiveBtn.UseVisualStyleBackColor = false;
+            this.fiveBtn.Click += new System.EventHandler(this.fiveBtn_Click);
             // 
             // fourBtn
             // 
-            this.fourBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fourBtn.Location = new System.Drawing.Point(7, 226);
-            this.fourBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fourBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fourBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourBtn.Location = new System.Drawing.Point(11, 319);
             this.fourBtn.Name = "fourBtn";
-            this.fourBtn.Size = new System.Drawing.Size(77, 51);
+            this.fourBtn.Size = new System.Drawing.Size(116, 78);
             this.fourBtn.TabIndex = 7;
             this.fourBtn.Text = "4";
-            this.fourBtn.UseVisualStyleBackColor = true;
+            this.fourBtn.UseVisualStyleBackColor = false;
+            this.fourBtn.Click += new System.EventHandler(this.fourBtn_Click);
             // 
             // multiBtn
             // 
-            this.multiBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiBtn.Location = new System.Drawing.Point(251, 226);
-            this.multiBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.multiBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.multiBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiBtn.Location = new System.Drawing.Point(377, 319);
             this.multiBtn.Name = "multiBtn";
-            this.multiBtn.Size = new System.Drawing.Size(77, 51);
+            this.multiBtn.Size = new System.Drawing.Size(116, 78);
             this.multiBtn.TabIndex = 18;
             this.multiBtn.Text = "x";
-            this.multiBtn.UseVisualStyleBackColor = true;
+            this.multiBtn.UseVisualStyleBackColor = false;
+            this.multiBtn.Click += new System.EventHandler(this.multiBtn_Click);
             // 
             // plusBtn
             // 
-            this.plusBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusBtn.Location = new System.Drawing.Point(251, 281);
-            this.plusBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plusBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.plusBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusBtn.Location = new System.Drawing.Point(377, 487);
             this.plusBtn.Name = "plusBtn";
-            this.plusBtn.Size = new System.Drawing.Size(77, 51);
+            this.plusBtn.Size = new System.Drawing.Size(116, 78);
             this.plusBtn.TabIndex = 17;
             this.plusBtn.Text = "+";
-            this.plusBtn.UseVisualStyleBackColor = true;
+            this.plusBtn.UseVisualStyleBackColor = false;
+            this.plusBtn.Click += new System.EventHandler(this.plusBtn_Click);
             // 
             // equalBtn
             // 
-            this.equalBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equalBtn.Location = new System.Drawing.Point(251, 336);
-            this.equalBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.equalBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.equalBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equalBtn.Location = new System.Drawing.Point(377, 572);
             this.equalBtn.Name = "equalBtn";
-            this.equalBtn.Size = new System.Drawing.Size(77, 51);
+            this.equalBtn.Size = new System.Drawing.Size(116, 78);
             this.equalBtn.TabIndex = 16;
             this.equalBtn.Text = "=";
-            this.equalBtn.UseVisualStyleBackColor = true;
+            this.equalBtn.UseVisualStyleBackColor = false;
+            this.equalBtn.Click += new System.EventHandler(this.equalBtn_Click);
             // 
             // divBtn
             // 
-            this.divBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divBtn.Location = new System.Drawing.Point(251, 170);
-            this.divBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.divBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.divBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divBtn.Location = new System.Drawing.Point(377, 233);
             this.divBtn.Name = "divBtn";
-            this.divBtn.Size = new System.Drawing.Size(77, 51);
+            this.divBtn.Size = new System.Drawing.Size(116, 78);
             this.divBtn.TabIndex = 15;
             this.divBtn.Text = "÷";
-            this.divBtn.UseVisualStyleBackColor = true;
+            this.divBtn.UseVisualStyleBackColor = false;
+            this.divBtn.Click += new System.EventHandler(this.divBtn_Click);
             // 
             // zeroBtn
             // 
-            this.zeroBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zeroBtn.Location = new System.Drawing.Point(89, 336);
-            this.zeroBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.zeroBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.zeroBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zeroBtn.Location = new System.Drawing.Point(135, 488);
             this.zeroBtn.Name = "zeroBtn";
-            this.zeroBtn.Size = new System.Drawing.Size(77, 51);
+            this.zeroBtn.Size = new System.Drawing.Size(116, 78);
             this.zeroBtn.TabIndex = 14;
             this.zeroBtn.Text = "0";
-            this.zeroBtn.UseVisualStyleBackColor = true;
+            this.zeroBtn.UseVisualStyleBackColor = false;
+            this.zeroBtn.Click += new System.EventHandler(this.zeroBtn_Click);
             // 
-            // CeBtn
+            // plusNegBtn2
             // 
-            this.CeBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CeBtn.Location = new System.Drawing.Point(89, 115);
-            this.CeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.CeBtn.Name = "CeBtn";
-            this.CeBtn.Size = new System.Drawing.Size(77, 51);
-            this.CeBtn.TabIndex = 13;
-            this.CeBtn.Text = "CE";
-            this.CeBtn.UseVisualStyleBackColor = true;
-            // 
-            // plusNegBtn
-            // 
-            this.plusNegBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusNegBtn.Location = new System.Drawing.Point(7, 336);
-            this.plusNegBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.plusNegBtn.Name = "plusNegBtn";
-            this.plusNegBtn.Size = new System.Drawing.Size(77, 51);
-            this.plusNegBtn.TabIndex = 19;
-            this.plusNegBtn.Text = "±";
-            this.plusNegBtn.UseVisualStyleBackColor = true;
+            this.plusNegBtn2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.plusNegBtn2.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusNegBtn2.Location = new System.Drawing.Point(13, 572);
+            this.plusNegBtn2.Name = "plusNegBtn2";
+            this.plusNegBtn2.Size = new System.Drawing.Size(116, 78);
+            this.plusNegBtn2.TabIndex = 19;
+            this.plusNegBtn2.Text = "± Negative";
+            this.plusNegBtn2.UseVisualStyleBackColor = false;
+            this.plusNegBtn2.Click += new System.EventHandler(this.plusNegBtn2_Click);
             // 
             // periodBtn
             // 
-            this.periodBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.periodBtn.Location = new System.Drawing.Point(170, 337);
-            this.periodBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.periodBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.periodBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.periodBtn.Location = new System.Drawing.Point(256, 489);
             this.periodBtn.Name = "periodBtn";
-            this.periodBtn.Size = new System.Drawing.Size(77, 51);
+            this.periodBtn.Size = new System.Drawing.Size(116, 78);
             this.periodBtn.TabIndex = 20;
             this.periodBtn.Text = "•";
-            this.periodBtn.UseVisualStyleBackColor = true;
+            this.periodBtn.UseVisualStyleBackColor = false;
+            this.periodBtn.Click += new System.EventHandler(this.periodBtn_Click);
             // 
             // entBtn
             // 
-            this.entBtn.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.entBtn.Location = new System.Drawing.Point(8, 391);
-            this.entBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.entBtn.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entBtn.Location = new System.Drawing.Point(135, 573);
             this.entBtn.Name = "entBtn";
-            this.entBtn.Size = new System.Drawing.Size(321, 50);
+            this.entBtn.Size = new System.Drawing.Size(237, 77);
             this.entBtn.TabIndex = 21;
             this.entBtn.Text = "Enter";
-            this.entBtn.UseVisualStyleBackColor = true;
+            this.entBtn.UseVisualStyleBackColor = false;
+            this.entBtn.Click += new System.EventHandler(this.entBtn_Click);
             // 
-            // listBox1
+            // subtracBTN
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(353, 54);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(322, 381);
-            this.listBox1.TabIndex = 23;
+            this.subtracBTN.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.subtracBTN.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtracBTN.Location = new System.Drawing.Point(379, 406);
+            this.subtracBTN.Name = "subtracBTN";
+            this.subtracBTN.Size = new System.Drawing.Size(114, 77);
+            this.subtracBTN.TabIndex = 25;
+            this.subtracBTN.Text = "-";
+            this.subtracBTN.UseVisualStyleBackColor = false;
+            this.subtracBTN.Click += new System.EventHandler(this.subtracBTN_Click);
             // 
-            // richTextBox1
+            // plusNegBtn1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(7, 54);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(323, 59);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
+            this.plusNegBtn1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.plusNegBtn1.Font = new System.Drawing.Font("Arial Narrow", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusNegBtn1.Location = new System.Drawing.Point(13, 487);
+            this.plusNegBtn1.Name = "plusNegBtn1";
+            this.plusNegBtn1.Size = new System.Drawing.Size(114, 78);
+            this.plusNegBtn1.TabIndex = 26;
+            this.plusNegBtn1.Text = "± Positive";
+            this.plusNegBtn1.UseVisualStyleBackColor = false;
+            this.plusNegBtn1.Click += new System.EventHandler(this.plusNegBtn1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(13, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(479, 40);
+            this.textBox1.TabIndex = 27;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(692, 461);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.listBox1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(515, 676);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.plusNegBtn1);
+            this.Controls.Add(this.subtracBTN);
             this.Controls.Add(this.entBtn);
             this.Controls.Add(this.periodBtn);
-            this.Controls.Add(this.plusNegBtn);
+            this.Controls.Add(this.plusNegBtn2);
             this.Controls.Add(this.multiBtn);
             this.Controls.Add(this.plusBtn);
             this.Controls.Add(this.equalBtn);
             this.Controls.Add(this.divBtn);
             this.Controls.Add(this.zeroBtn);
-            this.Controls.Add(this.CeBtn);
             this.Controls.Add(this.nineBtn);
             this.Controls.Add(this.eightBtn);
             this.Controls.Add(this.sevenBtn);
@@ -392,10 +398,10 @@ namespace WinformUI
             this.Controls.Add(this.oneBtn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.clearBtn);
-            this.Controls.Add(this.percentBtn);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dataman";
@@ -414,7 +420,6 @@ namespace WinformUI
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button percentBtn;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button threeBtn;
@@ -431,12 +436,12 @@ namespace WinformUI
         private System.Windows.Forms.Button equalBtn;
         private System.Windows.Forms.Button divBtn;
         private System.Windows.Forms.Button zeroBtn;
-        private System.Windows.Forms.Button CeBtn;
-        private System.Windows.Forms.Button plusNegBtn;
+        private System.Windows.Forms.Button plusNegBtn2;
         private System.Windows.Forms.Button periodBtn;
         private System.Windows.Forms.Button entBtn;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button subtracBTN;
+        private System.Windows.Forms.Button plusNegBtn1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
