@@ -33,14 +33,14 @@ body {
 }
 
 .description{
-    text-align: left;
+    text-align: center;
     color: black;
     font-size: 18px;
     padding: 10px;
 }
 
 .projects{
-    text-align: left;
+    text-align: center;
     color: black;
     font-size: 18px;
     padding: 10px;
