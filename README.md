@@ -13,18 +13,16 @@ Table of Contents:
 
 2. Getting Started
 - System Requirements : Windows 10 or higher, Linux, Mac
-- Installation Instructions :
-- User Interface Overview :
+- Installation Instructions : Download zip file, use a zip file extractor 7-zip or prefered choice. Go to /csharp , /Dataman , open the exe. file and follow the download instructions. (Exe/Download instructions will be implemented in future updates.)
+
 
 3. Data Entry
-- Entering Data : 
-- Managing Data Sets :
-- Importing and Exporting Data :
+- Entering Data : As of 12/13/23 this will be a simple caclulator setup and the near future I will be impleminting updates to the program. When a user enters a number the program will show the user how to solve it, or if a user ask a question pertaining to a math equation it will solve
+  it with the right steps
 
 4. Calculations
-- Available Calculations :
-- Performing Calculations :
-- Customizing Calculations :
+- Available Calculations : Addition, Subtraction, Multiplication, Division, square root, negative and positive numbers
+- Performing Calculations : Does the basic math equations for the most part. Once implemented the program will be able to answer user questions
 
 5. Results and Reporting
 - Viewing Results :
@@ -38,10 +36,9 @@ Table of Contents:
 
 7. Troubleshooting
 - Common Issues and Solutions :
-- Error Messages :
-- Contacting Support :
+- Contacting Support : Any issues reach out to me here on github
 
 8. Appendix
 - Glossary of Terms :
-- Keyboard Shortcuts :
-- Sample Data Sets :
+- Keyboard Shortcuts : No shortcuts have been set yet
+
