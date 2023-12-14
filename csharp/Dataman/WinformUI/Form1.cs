@@ -191,75 +191,122 @@ namespace WinformUI
 
         private void divBtn_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            Operation = "/";
+            try
+            {
+                FirstNumber = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = "0";
+                Operation = "/";
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Invalid input!\nTry using integers.");
+            }
+
         }
 
         private void multiBtn_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            Operation = "*";
+            try
+            {
+                FirstNumber = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = "0";
+                Operation = "*";
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Invalid input!\nTry using integers.");
+            }
+         
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                FirstNumber = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = "0";
+                Operation = "+";
+            }
+            catch (Exception)
+            {
 
-            FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            Operation = "+";
+                MessageBox.Show("Invalid input!\nTry using integers.");
+            }
+            
 
         }
 
         private void equalBtn_Click(object sender, EventArgs e)
         {
-            double SecondNumber;
-            double Result;
+            try
+            {
+                double SecondNumber;
+                double Result;
 
-            SecondNumber = Convert.ToDouble(textBox1.Text);
+                SecondNumber = Convert.ToDouble(textBox1.Text);
 
-            if (Operation == "+")
-            {
-                Result = (FirstNumber + SecondNumber);
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "-")
-            {
-                Result = (FirstNumber - SecondNumber);
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "*")
-            {
-                Result = (FirstNumber * SecondNumber);
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "/")
-            {
-                if (SecondNumber == 0)
+                if (Operation == "+")
                 {
-                    textBox1.Text = "Cannot divide by zero";
-
-                }
-                else
-                {
-                    Result = (FirstNumber / SecondNumber);
+                    Result = (FirstNumber + SecondNumber);
                     textBox1.Text = Convert.ToString(Result);
                     FirstNumber = Result;
                 }
+                if (Operation == "-")
+                {
+                    Result = (FirstNumber - SecondNumber);
+                    textBox1.Text = Convert.ToString(Result);
+                    FirstNumber = Result;
+                }
+                if (Operation == "*")
+                {
+                    Result = (FirstNumber * SecondNumber);
+                    textBox1.Text = Convert.ToString(Result);
+                    FirstNumber = Result;
+                }
+                if (Operation == "/")
+                {
+                    if (SecondNumber == 0)
+                    {
+                        textBox1.Text = "Cannot divide by zero";
+
+                    }
+                    else
+                    {
+                        Result = (FirstNumber / SecondNumber);
+                        textBox1.Text = Convert.ToString(Result);
+                        FirstNumber = Result;
+                    }
+                }
             }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Invalid input!\nTry using integers.");
+
+            }
+
         }
 
 
         private void subtracBTN_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            Operation = "-";
+            try
+            {
+                FirstNumber = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = "0";
+                Operation = "-";
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Invalid input!\nTry using integers.");
+
+            }
+           
+
         }
 
         private void plusNegBtn1_Click(object sender, EventArgs e)
@@ -288,47 +335,55 @@ namespace WinformUI
         {
             double SecondNumber;
             double Result;
+            try
+            {
+                SecondNumber = Convert.ToDouble(textBox1.Text);
 
-            SecondNumber = Convert.ToDouble(textBox1.Text);
-
-            if (Operation == "+")
-            {
-                Result = (FirstNumber + SecondNumber);
-                textBox1.Clear();
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "-")
-            {
-                Result = (FirstNumber - SecondNumber);
-                textBox1.Clear();
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "*")
-            {
-                Result = (FirstNumber * SecondNumber);
-                textBox1.Clear();
-                textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
-            }
-            if (Operation == "/")
-            {
-                if (SecondNumber == 0)
+                if (Operation == "+")
                 {
-                    MessageBox.Show("Cannot divide by zero \nPlease try again.");
-
-                }
-                else
-                {
-                    Result = (FirstNumber / SecondNumber);
+                    Result = (FirstNumber + SecondNumber);
                     textBox1.Clear();
                     textBox1.Text = Convert.ToString(Result);
                     FirstNumber = Result;
                 }
+                if (Operation == "-")
+                {
+                    Result = (FirstNumber - SecondNumber);
+                    textBox1.Clear();
+                    textBox1.Text = Convert.ToString(Result);
+                    FirstNumber = Result;
+                }
+                if (Operation == "*")
+                {
+                    Result = (FirstNumber * SecondNumber);
+                    textBox1.Clear();
+                    textBox1.Text = Convert.ToString(Result);
+                    FirstNumber = Result;
+                }
+                if (Operation == "/")
+                {
+                    if (SecondNumber == 0)
+                    {
+                        MessageBox.Show("Cannot divide by zero \nPlease try again.");
+
+                    }
+                    else
+                    {
+                        Result = (FirstNumber / SecondNumber);
+                        textBox1.Clear();
+                        textBox1.Text = Convert.ToString(Result);
+                        FirstNumber = Result;
+                    }
+                }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Invalid input!\nTry using integers.");
+            }
+            
         }
 
-
+ 
     }
 }
